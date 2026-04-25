@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Gestión de Facturas - TecniLAP</title>
+</head>
+<body class="bg-light">
+
+    <div class="container mt-3">
+        <a href="../dashboard.html" class="btn btn-dark btn-sm shadow-sm">Volver al Menú Principal</a>
+    </div>
+
+    <br><h2 class="text-center">Listado de Facturas</h2><br>
+
+    <div class="container border p-4 shadow-sm bg-white rounded">
+        
+        <div class="card mb-3 bg-light border-0">
+            <div class="card-body py-2">
+                <div class="row align-items-center g-2">
+                    <div class="col-md-auto fw-bold">Cliente ID:</div>
+                    <div class="col-md-3">
+                        <input type="text" id="inputBuscarCliente" class="form-control form-control-sm" placeholder="UUID Cliente...">
+                    </div>
+                    <div class="col-md-auto fw-bold">Trabajo ID:</div>
+                    <div class="col-md-3">
+                        <input type="text" id="inputBuscarTrabajo" class="form-control form-control-sm" placeholder="UUID Trabajo...">
+                    </div>
+                    <div class="col-md-auto">
+                        <button id="btnFiltrar" class="btn btn-dark btn-sm">Filtrar</button>
+                        <button id="btnLimpiarFiltro" class="btn btn-outline-secondary btn-sm ms-1">Ver Todas</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <a href="crearFactura.html" class="btn btn-primary">Registrar Nueva Factura</a>
+            
+            <div class="d-flex align-items-center">
+                <label for="filasPorPagina" class="me-2 mb-0 fw-bold">Mostrar:</label>
+                <select id="filasPorPagina" class="form-select form-select-sm" style="width: 80px;">
+                    <option value="3" selected>3</option>
+                    <option value="10">10</option>
+                    <option value="25">25</option>
+                    <option value="50">50</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="table-responsive">
+            <table class="table table-hover align-middle" id="tablaDatos">
+                <thead class="table-dark">
+                    <tr>
+                        <th class="text-center">ID</th>
+                        <th class="text-center">Concepto</th>
+                        <th class="text-center">Monto</th>
+                        <th class="text-center">Fecha</th>
+                        <th class="text-center">Método Pago</th>
+                        <th class="text-center">Trabajo (ID)</th>
+                        <th class="text-center">Cliente (ID)</th>
+                        <th colspan="3" class="text-center">Operaciones</th>
+                    </tr>
+                </thead>
+                <tbody id="cuerpoTabla"></tbody>
+            </table>
+        </div>
+
+        <div class="d-flex justify-content-center gap-3 mt-3">
+            <button class="btn btn-outline-secondary" id="paginaAnterior" style="display: none;">← Volver</button>
+            <button class="btn btn-outline-primary" id="paginaSiguiente" style="display: none;">Siguiente →</button>
+        </div>
+    </div>
+
+    <script src="../../fetch/utils/auditoria.js"></script> <script src="../../fetch/factura/listarFacturas.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

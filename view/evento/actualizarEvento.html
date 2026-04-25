@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Actualizar Evento - TecniLAP</title>
+</head>
+<body class="bg-light">
+
+    <div class="container mt-3">
+        <a href="../dashboard.html" class="btn btn-dark btn-sm shadow-sm">Volver al Menú Principal</a>
+    </div>
+
+    <div class="container mt-5 mb-5">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-10 col-lg-8">
+                <div class="border p-5 shadow-sm bg-white rounded border-top border-warning border-4">
+                    <h2 class="text-center mb-4">Reprogramar / Editar Evento</h2>
+                    
+                    <form id="formularioActualizar">
+                        <div class="mb-3">
+                            <label for="titulo" class="form-label fw-bold">Título del Evento</label>
+                            <input type="text" class="form-control" id="titulo" required>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="tipo" class="form-label fw-bold">Tipo de Evento</label>
+                                <select class="form-select" id="tipo" required>
+                                    <option value="ENTREGA">Entrega de Trabajo</option>
+                                    <option value="PAGO">Pago / Cobro</option>
+                                    <option value="RECORDATORIO">Recordatorio General</option>
+                                    <option value="CITA">Cita con Cliente</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="fecha_hora" class="form-label fw-bold">Fecha y Hora</label>
+                                <input type="datetime-local" class="form-control" id="fecha_hora" required>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="descripcion" class="form-label fw-bold">Descripción / Notas</label>
+                            <textarea class="form-control" id="descripcion" rows="3" required></textarea>
+                        </div>
+
+                        <div class="d-flex justify-content-between mt-4">
+                            <a href="indexEventos.html" class="btn btn-outline-secondary">← Cancelar y volver</a>
+                            <button type="submit" class="btn btn-warning px-4 text-dark fw-bold">Actualizar Evento</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../../fetch/utils/auditoria.js"></script> <script src="../../fetch/evento/actualizarEvento.js"></script>
+</body>
+</html>
