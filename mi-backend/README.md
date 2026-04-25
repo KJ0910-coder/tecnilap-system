@@ -44,4 +44,5 @@ Si deseas clonar y probar este proyecto en tu entorno local:
 
 1. Clona el repositorio:
    bash
-git clone https://github.com/KJ0910-coder/tecnilap-system.git
+git clone
+https://github.com/KJ0910-coder/tecnilap-system.git
