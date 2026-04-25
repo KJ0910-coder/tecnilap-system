@@ -23,12 +23,12 @@
 
 ## 📸 Pantallas del Sistema
 
-> **Nota para el creador:** ¡Aquí debes poner tus fotos! Para hacerlo en GitHub, solo arrastra la imagen desde tu computadora hacia la ventana de edición de GitHub y se generará un link automático.
+<img width="1235" height="572" alt="image" src="https://github.com/user-attachments/assets/17742e87-9946-4b3c-8fc6-0adcfdd4417a" />
 
-*Reemplaza este texto con capturas de pantalla de:*
-1. La pantalla de Login.
-2. El panel principal (Dashboard).
-3. Una captura de pantalla del celular mostrando el bot de Telegram funcionando.
+<img width="1235" height="574" alt="image" src="https://github.com/user-attachments/assets/8c2542e2-282b-4ab1-b563-12d0f9cb8805" />
+
+<img width="1184" height="579" alt="image" src="https://github.com/user-attachments/assets/f5265a1c-d9ee-4df8-8206-b407af614aff" />
+
 
 ## ⚙️ Arquitectura de Notificaciones
 
@@ -44,4 +44,4 @@ Si deseas clonar y probar este proyecto en tu entorno local:
 
 1. Clona el repositorio:
    ```bash
-   git clone [https://github.com/TU_USUARIO/tecnilap-system.git](https://github.com/TU_USUARIO/tecnilap-system.git)
+   git clone [https://github.com/KJ0910-coder/tecnilap-system.git](https://github.com/KJ0910-coder/tecnilap-system.git)
