@@ -43,6 +43,6 @@ El sistema utiliza un enfoque moderno para reducir el consumo de recursos locale
 Si deseas clonar y probar este proyecto en tu entorno local:
 
 1. Clona el repositorio:
-   bash
-git clone
-https://github.com/KJ0910-coder/tecnilap-system.git
+   ```bash
+git clone [https://github.com/KJ0910-coder/tecnilap-system.git](https://github.com/KJ0910-coder/tecnilap-system.git)
+   ```
